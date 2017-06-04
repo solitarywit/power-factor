@@ -63,25 +63,48 @@
 /******/ 	__webpack_require__.p = "http://localhost:8083/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 5:
+/******/ ([
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 7:
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-console.log('hello world');
+module.exports = __webpack_require__.p + "images/1.jpg";
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/2.jpg";
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/3.jpg";
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
 __webpack_require__(5);
+__webpack_require__(7);
+__webpack_require__(8);
+__webpack_require__(9);
 
 
 /***/ })
-
-/******/ });
+/******/ ]);

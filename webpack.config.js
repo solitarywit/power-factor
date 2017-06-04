@@ -38,6 +38,31 @@ module.exports = {
                         query: {resources: 'resources/sass/sass-resources.scss'},
                     }
                 ])
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                loaders: [
+                    'file-loader?name=images/[name].[ext]',
+                    //{
+                    //    loader: 'image-webpack-loader',
+                    //    query: {
+                    //        useRelativePath: true,
+                    //        mozjpeg: {
+                    //            quality: 65
+                    //        },
+                    //        //progressive: true,
+                    //        //optimizationLevel: 7,
+                    //        //interlaced: false,
+                    //        pngquant: {
+                    //            quality: '65-90',
+                    //            speed: 4
+                    //        },
+                    //        output : {
+                    //            filename: 'images/[name].[ext]'
+                    //        }
+                    //    }
+                    //}
+                ]
             }
         ]
     },

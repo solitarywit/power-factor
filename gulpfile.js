@@ -14,7 +14,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('build',['html', 'webpack:build-dev'], function() {
-    gulp.watch(['assets/**/*', 'templates/**/*'], ['html', "webpack:build-dev"]);
+    gulp.watch(['assets/**/*', 'templates/**/*', 'images/**/*'], ['html', "webpack:build-dev"]);
 });
 
 gulp.task("webpack:build-dev", function(callback) {

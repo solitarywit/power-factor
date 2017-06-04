@@ -2,8 +2,19 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-12">
-                I'm header
+                <div class="logo">Power Factor Logo</div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-4 header-call">
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-4 header-place">
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-4 header-langs text-right">
+                <a class="text-uppercase" href="#">rus</a>
+                <a class="text-uppercase" href="#">eng</a>
             </div>
         </div>
     </div>
 </header>
+{% block navbar %}{% include "components/navbar.html" %}{% endblock %}
