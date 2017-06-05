@@ -7,8 +7,8 @@ module.exports = {
     entry: require('./app/main.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'assets/[name].js',
-        publicPath: 'http://localhost:8083/'
+        filename: 'assets/[name].bundle.js',
+        publicPath: 'http://localhost:8080/'
     },
     resolve: {
         extensions: ['.js', '.html', '.css', '.sass', '.scss'],
@@ -68,7 +68,7 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: 'assets/[name].css',
+            filename: 'assets/[name].bundle.css',
             allChunks: true
         }),
         new webpack.ProvidePlugin({
