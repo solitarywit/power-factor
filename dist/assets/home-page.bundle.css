@@ -1,0 +1,17 @@
+.hero-carousel .carousel-item.active, .hero-carousel .carousel-item.carousel-item-next, .hero-carousel .carousel-item.carousel-item-prev {
+  display: block; }
+
+.hero-carousel .carousel-caption {
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .hero-carousel .carousel-caption .container {
+    background: rgba(255, 255, 255, 0.9);
+    color: #13133a; }
+.global-nav .nav-link {
+  color: #fff;
+  -webkit-transition: .5s ease;
+  transition: .5s ease; }
+  .global-nav .nav-link:hover, .global-nav .nav-link.active {
+    background: #fff;
+    color: #13133a; }

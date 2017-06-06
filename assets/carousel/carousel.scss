@@ -4,4 +4,13 @@
       display: block;
     }
   }
+  .carousel-caption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .container {
+      background: rgba($white, 0.9);
+      color: $black;
+    }
+  }
 }

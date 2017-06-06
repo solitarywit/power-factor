@@ -2,8 +2,15 @@ var vendor = [
     'jquery',
     'bootstrap-loader/extractStyles',
 ];
+var global = [
+    'assets/header/header'
+];
+var homePage = [
+    'assets/carousel/carousel',
+    'assets/global-nav/global-nav'
+];
 module.exports = {
     'vendor' : vendor,
-    'header': 'assets/header/header',
-    'carousel': 'assets/carousel/carousel',
+    'global' : global,
+    'home-page': homePage,
 };
