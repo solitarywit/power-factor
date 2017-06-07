@@ -8,6 +8,16 @@
   .hero-carousel .carousel-caption .container {
     background: rgba(255, 255, 255, 0.9);
     color: #13133a; }
+
+.hero-carousel .open-details {
+  cursor: pointer; }
+
+.hero-carousel .carousel-control-prev, .hero-carousel .carousel-control-next {
+  pointer-events: none; }
+  .hero-carousel .carousel-control-prev .carousel-control-next-icon, .hero-carousel .carousel-control-prev .carousel-control-prev-icon, .hero-carousel .carousel-control-next .carousel-control-next-icon, .hero-carousel .carousel-control-next .carousel-control-prev-icon {
+    width: 120px;
+    height: 50px;
+    pointer-events: auto; }
 .global-nav .nav-link {
   color: #fff;
   -webkit-transition: .5s ease;
@@ -15,3 +25,14 @@
   .global-nav .nav-link:hover, .global-nav .nav-link.active {
     background: #fff;
     color: #13133a; }
+.carousel-modal {
+  color: #13133a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .carousel-modal.show {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important; }
+  .carousel-modal .modal-content {
+    border-radius: 0; }

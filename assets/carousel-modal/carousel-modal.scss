@@ -1,0 +1,12 @@
+.carousel-modal {
+  color: $black;
+  align-items: center;
+
+  &.show {
+    display: flex !important;
+  }
+
+  .modal-content {
+    border-radius: 0;
+  }
+}

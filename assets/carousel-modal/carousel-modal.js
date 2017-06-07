@@ -1,0 +1,1 @@
+require('./carousel-modal.scss');

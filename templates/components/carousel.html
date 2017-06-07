@@ -18,7 +18,7 @@
                                 <p><span class="text-primary">2</span> Bathrooms</p>
                             </div>
                             <div class="col-3 py-4_5 pl-4_5 pr-2 hidden-md-down"><span class="h3">$2,000,00</span></div>
-                            <div class="col-2 bg-primary text-white align-self-stretch d-flex align-items-center justify-content-center hidden-md-down">
+                            <div data-toggle="modal" data-target="#openDetails1" class="open-details col-2 bg-primary text-white align-self-stretch d-flex align-items-center justify-content-center hidden-md-down">
                                 <span class="text-uppercase h5 font-weight-normal">View Details</span>
                             </div>
                         </div>
@@ -42,3 +42,4 @@
         </a>
     </div>
 </div>
+{% block detailsModal %}{% include "components/details-modal.html" %}{% endblock %}

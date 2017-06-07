@@ -13,4 +13,15 @@
       color: $black;
     }
   }
+  .open-details {
+    cursor: pointer;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    pointer-events: none;
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+      width: 120px;
+      height: 50px;
+      pointer-events: auto;
+    }
+  }
 }

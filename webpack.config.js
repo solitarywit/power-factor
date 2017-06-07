@@ -40,7 +40,7 @@ module.exports = {
                 ])
             },
             {
-                test: /\.(gif|png|jpe?g|svg)$/i,
+                test: /\.(gif|png|jpe?g|svg|pdf|msds)$/i,
                 loaders: [
                     'file-loader?name=images/[name].[ext]',
                     //{
