@@ -1,0 +1,44 @@
+.collection-set {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  .label-number {
+    font-size: 1.375rem;
+  }
+  .figure-container {
+    margin-bottom: 50px;
+    &:hover {
+      .figure {
+        transform: translate(0px, -10px) scale(0.85);
+        &::before {
+          border-color: $brand-primary;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  .figure {
+    display: block;
+    height: 124px;
+    margin: 0 auto 25px;
+    padding: 32px 10px;
+    position: relative;
+    top: 0;
+    transition: all 500ms ease 0s;
+    width: 124px;
+    &::before {
+      border: 1px solid $gray-lighter;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: all 500ms ease 0s;
+      width: 100%;
+    }
+    i {
+      color: $brand-primary;
+      font-size: 35px;
+      padding-top: 10px;
+    }
+  }
+}

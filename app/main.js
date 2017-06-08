@@ -8,7 +8,8 @@ var global = [
 var homePage = [
     'assets/carousel/carousel',
     'assets/global-nav/global-nav',
-    'assets/carousel-modal/carousel-modal'
+    'assets/carousel-modal/carousel-modal',
+    'assets/collection-set/collection-set',
 ];
 module.exports = {
     'vendor' : vendor,

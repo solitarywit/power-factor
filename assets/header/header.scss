@@ -4,4 +4,21 @@
       color: $white;
     }
   }
+  .header-call, .header-place {
+    &::before {
+      background: $gray-lighter;
+      content: "";
+      height: 25px;
+      margin-top: -15px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg);
+      width: 2px;
+    }
+    i {
+      border: 1px solid $white;
+    }
+  }
 }

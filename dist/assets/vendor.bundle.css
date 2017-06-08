@@ -791,8 +791,8 @@ fieldset[disabled] a.btn {
 
 .btn-link:focus,
 .btn-link:hover {
-  color: #bf2611;
-  text-decoration: underline;
+  color: #13133a;
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -866,7 +866,7 @@ kbd {
 kbd kbd {
   padding: 0;
   font-size: 100%;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 pre {
@@ -942,7 +942,7 @@ pre code {
 
 .form-control:disabled,
 .form-control[readonly] {
-  background-color: #eceeef;
+  background-color: #A1A1A1;
   opacity: 1;
 }
 
@@ -3108,7 +3108,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -3161,7 +3161,7 @@ ul ol {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 dd {
@@ -3180,8 +3180,8 @@ a {
 
 a:focus,
 a:hover {
-  color: #bf2611;
-  text-decoration: underline;
+  color: #13133a;
+  text-decoration: none;
 }
 
 a:not([href]):not([tabindex]) {
@@ -3318,16 +3318,16 @@ output {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #eceeef;
+  border-top: 1px solid #A1A1A1;
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #eceeef;
+  border-bottom: 2px solid #A1A1A1;
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #eceeef;
+  border-top: 2px solid #A1A1A1;
 }
 
 .table .table {
@@ -3340,12 +3340,12 @@ output {
 }
 
 .table-bordered {
-  border: 1px solid #eceeef;
+  border: 1px solid #A1A1A1;
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #eceeef;
+  border: 1px solid #A1A1A1;
 }
 
 .table-bordered thead th,
@@ -3443,7 +3443,7 @@ output {
 
 .thead-default th {
   color: #464a4c;
-  background-color: #eceeef;
+  background-color: #A1A1A1;
 }
 
 .table-inverse {
@@ -3596,7 +3596,7 @@ mark,
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
-  border-left: 0.25rem solid #eceeef;
+  border-left: 0.25rem solid #A1A1A1;
 }
 
 .blockquote-footer {
@@ -3613,7 +3613,7 @@ mark,
   padding-right: 1rem;
   padding-left: 0;
   text-align: right;
-  border-right: 0.25rem solid #eceeef;
+  border-right: 0.25rem solid #A1A1A1;
   border-left: 0;
 }
 
@@ -3637,7 +3637,7 @@ mark,
 }
 
 .alert-link {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .alert-dismissible .close {
@@ -3708,7 +3708,7 @@ mark,
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -3797,7 +3797,7 @@ a.badge:hover {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #eceeef;
+  background-color: #A1A1A1;
   border-radius: 0.25rem;
 }
 
@@ -4351,7 +4351,7 @@ a.badge:hover {
 .close {
   float: right;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1;
   color: #13133a;
   text-shadow: 0 1px 0 #fff;
@@ -4408,7 +4408,7 @@ button.close {
 
 .custom-control-input:disabled ~ .custom-control-indicator {
   cursor: not-allowed;
-  background-color: #eceeef;
+  background-color: #A1A1A1;
 }
 
 .custom-control-input:disabled ~ .custom-control-description {
@@ -4502,7 +4502,7 @@ button.close {
 .custom-select:disabled {
   color: #636c72;
   cursor: not-allowed;
-  background-color: #eceeef;
+  background-color: #A1A1A1;
 }
 
 .custom-select::-ms-expand {
@@ -4568,7 +4568,7 @@ button.close {
   padding: 0.5rem 1rem;
   line-height: 1.5;
   color: #464a4c;
-  background-color: #eceeef;
+  background-color: #A1A1A1;
   border: 1px solid rgba(19, 19, 58, 0.15);
   border-radius: 0 0.25rem 0.25rem 0;
 }
@@ -4627,7 +4627,7 @@ button.close {
   height: 1px;
   margin: 0.5rem 0;
   overflow: hidden;
-  background-color: #eceeef;
+  background-color: #A1A1A1;
 }
 
 .dropdown-item {
@@ -4765,7 +4765,7 @@ button.close {
   line-height: 1.25;
   color: #464a4c;
   text-align: center;
-  background-color: #eceeef;
+  background-color: #A1A1A1;
   border: 1px solid rgba(19, 19, 58, 0.15);
   border-radius: 0.25rem;
 }
@@ -4867,7 +4867,7 @@ button.close {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #eceeef;
+  background-color: #A1A1A1;
   border-radius: 0.3rem;
 }
 
@@ -4878,7 +4878,7 @@ button.close {
 }
 
 .jumbotron-hr {
-  border-top-color: #d0d5d8;
+  border-top-color: #888888;
 }
 
 .jumbotron-fluid {
@@ -4918,7 +4918,7 @@ button.close {
 
 .list-group-item-action:active {
   color: white;
-  background-color: #eceeef;
+  background-color: #A1A1A1;
 }
 
 .list-group-item {
@@ -5178,7 +5178,7 @@ button.list-group-item-danger.active {
 
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
-  border-color: #eceeef #eceeef #ddd;
+  border-color: #A1A1A1 #A1A1A1 #ddd;
 }
 
 .nav-tabs .nav-link.disabled {
@@ -5752,9 +5752,9 @@ button.list-group-item-danger.active {
 
 .page-link:focus,
 .page-link:hover {
-  color: #bf2611;
+  color: #13133a;
   text-decoration: none;
-  background-color: #eceeef;
+  background-color: #A1A1A1;
   border-color: #ddd;
 }
 
@@ -5816,7 +5816,7 @@ button.list-group-item-danger.active {
   font-size: 0.75rem;
   line-height: 1rem;
   text-align: center;
-  background-color: #eceeef;
+  background-color: #A1A1A1;
   border-radius: 0.25rem;
 }
 
@@ -5931,10 +5931,8 @@ tbody.collapse.show {
 
 @media (-webkit-transform-3d) {
   .carousel-item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    transition: -webkit-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+    -webkit-transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     -webkit-perspective: 1000px;
@@ -5944,10 +5942,8 @@ tbody.collapse.show {
 
 @supports ((-webkit-transform: translate3d(0, 0, 0)) or (transform: translate3d(0, 0, 0))) {
   .carousel-item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    transition: -webkit-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+    -webkit-transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     -webkit-perspective: 1000px;
@@ -6057,11 +6053,11 @@ tbody.collapse.show {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-image: none;
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  background-image: none;
 }
 
 .carousel-indicators {
@@ -6149,10 +6145,8 @@ tbody.collapse.show {
 }
 
 .modal.fade .modal-dialog {
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
   -webkit-transform: translate(0, -25%);
           transform: translate(0, -25%);
 }
@@ -6218,7 +6212,7 @@ tbody.collapse.show {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
-  border-bottom: 1px solid #eceeef;
+  border-bottom: 1px solid #A1A1A1;
 }
 
 .modal-title {
@@ -6245,7 +6239,7 @@ tbody.collapse.show {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 15px;
-  border-top: 1px solid #eceeef;
+  border-top: 1px solid #A1A1A1;
 }
 
 .modal-footer > :not(:first-child) {
@@ -6289,7 +6283,7 @@ tbody.collapse.show {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6473,7 +6467,7 @@ tbody.collapse.show {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -10322,7 +10316,7 @@ a.bg-inverse:hover {
 }
 
 .font-weight-bold {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .font-italic {

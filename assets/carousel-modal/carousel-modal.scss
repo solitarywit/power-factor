@@ -2,8 +2,19 @@
   color: $black;
   align-items: center;
 
-  &.show {
+  &.fade.show {
     display: flex !important;
+  }
+
+  &.fade {
+    .modal-dialog {
+      display: none;
+    }
+    &.show {
+      .modal-dialog {
+        display: block;
+      }
+    }
   }
 
   .modal-content {
