@@ -2,6 +2,7 @@
   .carousel-item {
     display: block;
     visibility: hidden;
+    transition: opacity 0.6s ease-in-out;
     &.active, &.carousel-item-next, &.carousel-item-prev {
       visibility: visible;
     }
@@ -45,7 +46,6 @@
       font-size: $font-size-sm;
     }
     .container {
-      background: rgba($white, 0.9);
       color: $black;
     }
   }
@@ -65,5 +65,11 @@
     p {
       margin-bottom: 5px;
     }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .hero-carousel .carousel-caption .container {
+    background: rgba($white, 0.9);
   }
 }

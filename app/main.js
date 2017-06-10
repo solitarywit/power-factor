@@ -10,6 +10,8 @@ var homePage = [
     'assets/global-nav/global-nav',
     'assets/carousel-modal/carousel-modal',
     'assets/collection-set/collection-set',
+    'assets/nearby/nearby',
+    'assets/footer/footer',
 ];
 module.exports = {
     'vendor' : vendor,

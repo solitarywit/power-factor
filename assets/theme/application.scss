@@ -1,0 +1,25 @@
+@import "variables/variables";
+.section-heading {
+  position: relative;
+  &::before {
+    background: $brand-primary none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -75px;
+    position: absolute;
+    width: 150px;
+  }
+  &::after {
+       background: $body-color none repeat scroll 0 0;
+       bottom: 0;
+       content: "";
+       height: 2px;
+       left: 50%;
+       margin-bottom: 8px;
+       margin-left: -25px;
+       position: absolute;
+       width: 50px;
+  }
+}

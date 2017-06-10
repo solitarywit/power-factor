@@ -16,9 +16,19 @@
       -webkit-transform: rotate(15deg);
       transform: rotate(15deg);
       width: 2px;
+      display: none;
     }
     i {
       border: 1px solid $white;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .header {
+    .header-call, .header-place {
+      &::before {
+        display: block;
+      }
     }
   }
 }

@@ -2,18 +2,43 @@ $brand-primary: #ed462f;
 $body-bg: #13133a;
 $black: $body-bg;
 $body-color: white;
+
+$inverse-bg:   $body-color;
+$inverse-color: $body-bg;
+
 $gray-lighter: #A1A1A1;
 $nav-link-padding: 1.25rem 1rem !important;
+
+$font-size-base: .875rem; // 14px
+$font-size-standard: 1rem; //16px
+$font-size-lg:   1.25rem !default; //20px
+$font-size-sm:   .875rem !default; //14px
+$font-size-xs:   .75rem !default; //12px
+
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.875rem;
+$font-size-h4: 1.5rem; //24px
 $font-size-h5: 1.375rem;
+$font-size-h6: 1rem !default;
+
+$display1-size: 6rem !default;
+$display2-size: 5.5rem !default;
+$display3-size: 4.5rem !default;
+$display4-size: 3.125rem;
+
+$display1-weight:     400;
+$display2-weight:     400;
+$display3-weight:     400;
+$display4-weight:     400;
 
 $font-family-base: 'Open Sans', sans-serif;
-$font-weight-bold: 600;
 
 $link-hover-color: $body-bg;
 $link-hover-decoration: none;
 
 $modal-transition: opacity .3s ease-out;
-$carousel-transition: opacity .6s ease-in-out;
+//$carousel-transition: opacity .6s ease-in-out;
 
 $carousel-control-prev-icon-bg: none;
 $carousel-control-next-icon-bg: none;
@@ -22,8 +47,30 @@ $spacer: 1rem !default;
 $spacer-x: $spacer !default;
 $spacer-y: $spacer !default;
 $fa-font-path: '../../node_modules/font-awesome/fonts' !default;
-$FontPathOpenSans: '../../node_modules/npm-font-open-sans/fonts' !default;
 
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-semibold: 600;
+$headings-font-weight: 600;
+
+strong {
+  font-weight: $font-weight-semibold;
+}
+
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+$btn-border-radius:              $border-radius !default;
+$btn-border-radius-lg:           $border-radius-lg !default;
+$btn-border-radius-sm:           $border-radius-sm !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 750px,
+        lg: 970px,
+        xl: 1170px
+);
 
 $spacers: (
         0: (
@@ -34,6 +81,7 @@ $spacers: (
                 x: ($spacer-x * .25),
                 y: ($spacer-y * .25)
         ),
+
         2: (
                 x: ($spacer-x * .5),
                 y: ($spacer-y * .5)
@@ -42,9 +90,17 @@ $spacers: (
                 x: $spacer-x,
                 y: $spacer-y
         ),
+        '3_25': (
+                x: ($spacer-x * 1.25),
+                y: ($spacer-y * 1.25)
+        ),
         4: (
                 x: ($spacer-x * 1.5),
                 y: ($spacer-y * 1.5)
+        ),
+        '4_75': (
+                x: ($spacer-x * 1.75),
+                y: ($spacer-y * 1.75)
         ),
         '4_5': (
                 x: ($spacer-x * 2.5),
@@ -56,6 +112,7 @@ $spacers: (
         )
 );
 
-$modal-lg:                    90%;
-$modal-md:                    96%;
-$modal-sm:                    100%;
+$modal-lg: 90%;
+$modal-md: 90%;
+$modal-sm: 100%;
+$modal-xs: 100%;

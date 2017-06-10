@@ -6,11 +6,13 @@ var webpack = require('webpack');
 var webpackConfig = require('./webpack.config.js');
 var WebpackDevServer = require("webpack-dev-server");
 var wds = null;
+var DATA = require('./data/global');
 
 gulp.task('html', function() {
     gulp.src(['templates/**/*.html'])
         .pipe(nunjucks({
-            searchPaths: ['templates']
+            searchPaths: ['templates'],
+            locals: DATA
         }))
         .pipe(gulp.dest('dist/'))
 });

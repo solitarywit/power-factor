@@ -1,0 +1,41 @@
+.nearby-place {
+  .places {
+    .place {
+      &:first-child {
+        i {
+          background: $red;
+        }
+        .distance {
+          color: $red;
+        }
+      }
+      &:nth-child(2) {
+        i {
+          background: $green;
+        }
+        .distance {
+          color: $green;
+        }
+      }
+      &:nth-child(3) {
+        i {
+          background: $purple;
+        }
+        .distance {
+          color: $purple;
+        }
+      }
+      &:last-child {
+        i {
+          background: $blue;
+        }
+        .distance {
+          color: $blue;
+        }
+      }
+    }
+  }
+  i {
+    font-size: $font-size-h3;
+  }
+}
