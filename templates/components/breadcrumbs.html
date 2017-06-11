@@ -1,0 +1,8 @@
+{% macro createBreadcrumbs(breadcrumbs) %}
+    <ol class="breadcrumb">
+        {% asyncEach breadcrumb in breadcrumbs %}
+        {% if loop.last === false %}<li class="breadcrumb-item"><a href="{{breadcrumb.url}}">{{breadcrumb.name}}</a></li>{% endif %}
+        {% if loop.last %}<li class="breadcrumb-item active">{{breadcrumb.name}}</li>{% endif %}
+        {% endeach %}
+    </ol>
+{% endmacro %}

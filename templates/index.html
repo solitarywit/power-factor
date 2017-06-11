@@ -1,1 +1,6 @@
 {% extends 'application/layouts.html' %}
+{% block pageStyle %}<link rel="stylesheet" href="assets/home-page.bundle.css">{% endblock %}
+{% block pageScript %}<script src="assets/home-page.bundle.js"></script>{% endblock %}
+{% block carousel %}{% include "components/carousel.html" %}{% endblock %}
+{% block collectionSet %}{% include "components/collection-set.html" %}{% endblock %}
+{% block nearby %}{% include "components/nearby.html" %}{% endblock %}

@@ -7,16 +7,18 @@
     <title>Title</title>
     <link rel="stylesheet" href="assets/vendor.bundle.css">
     <link rel="stylesheet" href="assets/global.bundle.css">
-    <link rel="stylesheet" href="assets/home-page.bundle.css">
+    {% block pageStyle %}{% endblock %}
 </head>
 <body>
 {% block header %}{% include "components/header.html" %}{% endblock %}
-{% block carousel %}{% include "components/carousel.html" %}{% endblock %}
-{% block collectionSet %}{% include "components/collection-set.html" %}{% endblock %}
-{% block nearby %}{% include "components/nearby.html" %}{% endblock %}
+{% block subheader %}{% endblock %}
+{% block gallery %}{% endblock %}
+{% block carousel %}{% endblock %}
+{% block collectionSet %}{% endblock %}
+{% block nearby %}{% endblock %}
 {% block footer %}{% include "components/footer.html" %}{% endblock %}
 <script src="assets/vendor.bundle.js"></script>
 <script src="assets/global.bundle.js"></script>
-<script src="assets/home-page.bundle.js"></script>
+{% block pageScript %}{% endblock %}
 </body>
 </html>

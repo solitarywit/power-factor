@@ -3524,7 +3524,7 @@ h6,
 
 h1,
 .h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 
 h2,
@@ -3828,7 +3828,7 @@ a.badge:hover {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #A1A1A1;
+  background-color: transparent;
   border-radius: 0;
 }
 
@@ -3846,7 +3846,7 @@ a.badge:hover {
   display: inline-block;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  color: #636c72;
+  color: white;
   content: "/";
 }
 
@@ -3859,7 +3859,7 @@ a.badge:hover {
 }
 
 .breadcrumb-item.active {
-  color: #636c72;
+  color: white;
 }
 
 .btn-group,
