@@ -94,17 +94,25 @@ $spacers: (
                 x: ($spacer-x * 1.25),
                 y: ($spacer-y * 1.25)
         ),
-        4: (
+        '3_5': (
                 x: ($spacer-x * 1.5),
                 y: ($spacer-y * 1.5)
         ),
-        '4_75': (
+        4: (
                 x: ($spacer-x * 1.75),
                 y: ($spacer-y * 1.75)
         ),
+        '4_25': (
+                x: ($spacer-x * 2),
+                y: ($spacer-y * 2)
+        ),
         '4_5': (
-                x: ($spacer-x * 2.5),
-                y: ($spacer-y * 2.5)
+                x: ($spacer-x * 2.25),
+                y: ($spacer-y * 2.25)
+        ),
+        '4_75': (
+                x: ($spacer-x * 2.75),
+                y: ($spacer-y * 2.75)
         ),
         5: (
                 x: ($spacer-x * 3),

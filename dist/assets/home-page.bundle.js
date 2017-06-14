@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "http://localhost:8080/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 47);
+/******/ 	return __webpack_require__(__webpack_require__.s = 48);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -187,7 +187,8 @@ module.exports = __webpack_require__.p + "images/2.jpg";
 module.exports = __webpack_require__.p + "images/3.jpg";
 
 /***/ }),
-/* 47 */
+/* 47 */,
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(8);

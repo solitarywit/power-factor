@@ -16,7 +16,7 @@ var homePage = [
 var galleryPage = [
     'assets/subheader/subheader',
     'assets/breadcrumbs/breadcrumbs',
-    'assets/gallery/gallery',
+    'assets/gallery/gallery'
 ];
 module.exports = {
     'vendor' : vendor,

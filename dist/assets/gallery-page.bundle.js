@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "http://localhost:8080/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 49);
+/******/ 	return __webpack_require__(__webpack_require__.s = 50);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -80,41 +80,25 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {__webpack_require__(36);
-
-var selectedFilters = {};
+__webpack_require__(47);
 
 var controls = $('.controls .btn');
-var ALL_FILTER = 'card';
+var ALL_FILTER = 'all';
+var ACTIVE_CLASS = 'active';
+var DATA_FILTER = 'filter';
 
 controls.each(function (index, btn) {
-    var filterClass = $(btn).data('filter');
-    selectedFilters[filterClass] = $(btn).hasClass('active');
-
     $(btn).on('click', function () {
-        if (filterClass !== ALL_FILTER){
-            $('[data-filter="'+ALL_FILTER+'"]').removeClass('active');
-            selectedFilters[ALL_FILTER] = false;
-            selectedFilters[filterClass] = !$(this).hasClass('active');
+        controls.removeClass(ACTIVE_CLASS);
+        $(this).addClass(ACTIVE_CLASS);
+        $('.' + ALL_FILTER).addClass('hide');
+        var self = this;
+        $('.' + $(self).data(DATA_FILTER)).toggleClass('hide');
+        //window.setTimeout(function(){
+        //    $('.' + $(self).data(DATA_FILTER)).toggleClass('hide');
+        //},600);
 
-            $.each(selectedFilters, function (filterClass, isActive) {
-                var card = $('.' + filterClass);
-                if (card && isActive) {
-                    $(card).show();
-                } else {
-                    $(card).hide();
-                }
-            });
-
-        } else {
-            controls.removeClass('active');
-            $.each(selectedFilters, function (key, value) {
-                selectedFilters[key] = false;
-            });
-            selectedFilters[ALL_FILTER] = true;
-            $(this).addClass('active');
-            $('.' + ALL_FILTER).show();
-            return false;
-        }
+        return false;
     });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -10446,7 +10430,14 @@ return jQuery;
 
 /***/ }),
 
-/***/ 49:
+/***/ 47:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/image.png";
+
+/***/ }),
+
+/***/ 50:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(15);

@@ -1,0 +1,33 @@
+.gallery-cards {
+  position: relative;
+  min-height: 100vh;
+  .all {
+    position: relative;
+    height: 472px;
+    transition: all 1s linear;
+
+    .card-item {
+      background: $black;
+      transform: scale(1) translateY(0);
+      opacity: 1;
+      transition: transform 2s ease, opacity .6s ease;
+      left:0;
+      top:0;
+    }
+    &.hide {
+      height: 0;
+      position: absolute;
+      .card-item {
+        opacity: 0;
+        transform: scale(0) translateY(-100%);
+      }
+    }
+  }
+  .card-item {
+    border: 1px solid $gray-lighter;
+  }
+  .card-footer {
+    background: $black;
+    border-top: 1px solid $gray-lighter;
+  }
+}

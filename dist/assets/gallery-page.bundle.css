@@ -7056,3 +7056,35 @@ strong {
   margin: 0;
   overflow: visible;
   clip: auto; }
+
+.gallery-cards {
+  position: relative;
+  min-height: 100vh; }
+  .gallery-cards .all {
+    position: relative;
+    height: 472px;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear; }
+    .gallery-cards .all .card-item {
+      background: #13133a;
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      opacity: 1;
+      -webkit-transition: opacity .6s ease, -webkit-transform 2s ease;
+      transition: opacity .6s ease, -webkit-transform 2s ease;
+      transition: transform 2s ease, opacity .6s ease;
+      transition: transform 2s ease, opacity .6s ease, -webkit-transform 2s ease;
+      left: 0;
+      top: 0; }
+    .gallery-cards .all.hide {
+      height: 0;
+      position: absolute; }
+      .gallery-cards .all.hide .card-item {
+        opacity: 0;
+        -webkit-transform: scale(0) translateY(-100%);
+                transform: scale(0) translateY(-100%); }
+  .gallery-cards .card-item {
+    border: 1px solid #A1A1A1; }
+  .gallery-cards .card-footer {
+    background: #13133a;
+    border-top: 1px solid #A1A1A1; }
