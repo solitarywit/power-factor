@@ -6,6 +6,8 @@ var global = [
     'assets/header/header',
     'assets/global-nav/global-nav',
     'assets/footer/footer',
+    'node_modules/aos/dist/aos',
+    'assets/theme/sections'
 ];
 var homePage = [
     'assets/carousel/carousel',
@@ -16,7 +18,8 @@ var homePage = [
 var galleryPage = [
     'assets/subheader/subheader',
     'assets/breadcrumbs/breadcrumbs',
-    'assets/gallery/gallery'
+    'assets/gallery/gallery',
+    'node_modules/mixitup/dist/mixitup'
 ];
 module.exports = {
     'vendor' : vendor,

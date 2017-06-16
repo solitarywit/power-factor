@@ -53,10 +53,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link" href="/gallery.html">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
@@ -71,13 +71,13 @@
 
 
 <section class="subheader">
-    <div class="subheader-overlay py-5">
+    <div class="subheader-overlay pt-4_5 pb-3 py-md-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 text-center text-md-left">
                     <h2 class="h3 text-uppercase font-weight-normal">Gallery</h2>
                 </div>
-                <div class="col-12 col-md-6 d-flex justify-content-end">
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
                     
     <ol class="breadcrumb">
         
@@ -94,7 +94,7 @@
         </div>
     </div>
 </section>
-<section class="photo-gallery">
+<section class="photo-gallery" data-aos="fade-up">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -105,32 +105,48 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12 controls d-flex justify-content-center mb-5" data-toggle="buttons">
-                <button class="btn btn-outline-primary active text-uppercase mx-1" aria-pressed="true"
+        <div class="row controls">
+            <div class="col-12 d-flex justify-content-center flex-wrap">
+                <button class="btn btn-outline-primary text-uppercase mx-1 mb-1"
                         autocomplete="off" data-filter="all">All
                 </button>
-                <button class="btn btn-outline-primary text-uppercase mx-1" aria-pressed="false" autocomplete="off"
-                        data-filter="bedroom">Bedroom
+                <button class="btn btn-outline-primary text-uppercase mx-1 mb-1"
+                        data-filter=".bedroom">Bedroom
                 </button>
-                <button class="btn btn-outline-primary text-uppercase mx-1" aria-pressed="false" autocomplete="off"
-                        data-filter="bathroom">Bathroom
+                <button class="btn btn-outline-primary text-uppercase mx-1 mb-1"
+                        data-filter=".bathroom">Bathroom
                 </button>
-                <button class="btn btn-outline-primary text-uppercase mx-1" aria-pressed="false" autocomplete="off"
-                        data-filter="kitchen">Kitchen
+                <button class="btn btn-outline-primary text-uppercase mx-1 mb-1"
+                        data-filter=".kitchen">Kitchen
                 </button>
-                <button class="btn btn-outline-primary text-uppercase mx-1" aria-pressed="false" autocomplete="off"
-                        data-filter="garage">Garage
+                <button class="btn btn-outline-primary text-uppercase mx-1 mb-1"
+                        data-filter=".garage">Garage
                 </button>
-                <button class="btn btn-outline-primary text-uppercase mx-1" aria-pressed="false" autocomplete="off"
-                        data-filter="basement">Basement
+                <button class="btn btn-outline-primary text-uppercase mx-1 mb-1"
+                        data-filter=".basement">Basement
                 </button>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <div class="gallery-cards col-12">
                 <div class="row">
-                    <div class="col-md-4 mb-4_25 all bedroom">
+                    <div class="col-md-4 mb-4_25 bedroom card-wrap mix" data-order="1">
+                        <div class="card-item">
+                            <img class="w-100" src="images/image.png" alt="Card image cap">
+                            <div class="card-header bg-primary text-white">125 Park Avenue 77, Alabama <strong class="float-lg-right h6 d-block d-lg-inline float-none mt-2 mb-0 my-lg-0">$2,50,000</strong></div>
+                            <div class="card-block">
+                                <h2 class="h6 card-title text-uppercase font-weight-bold">Card title</h2>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer text-white">
+                                <div class="row small">
+                                    <div class="col-4"><a href="" download><i class="fa fa-object-group mr-1"></i>Save MSDS</a></div>
+                                    <div class="col-4"><a href="" download><i class="fa fa-bed mr-1"></i>Save PDF</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4_25 card-wrap bedroom mix" data-order="2">
                         <div class="card-item">
                             <img class="w-100" src="images/image.png" alt="Card image cap">
                             <div class="card-header bg-primary text-white">125 Park Avenue 77, Alabama <strong class="float-right h6">$2,50,000</strong></div>
@@ -147,7 +163,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4_25 all bedroom">
+                    <div class="col-md-4 mb-4_25 card-wrap bedroom mix" data-order="3">
                         <div class="card-item">
                             <img class="w-100" src="images/image.png" alt="Card image cap">
                             <div class="card-header bg-primary text-white">125 Park Avenue 77, Alabama <strong class="float-right h6">$2,50,000</strong></div>
@@ -164,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4_25 all bedroom">
+                    <div class="col-md-4 mb-4_25 card-wrap bathroom mix" data-order="4">
                         <div class="card-item">
                             <img class="w-100" src="images/image.png" alt="Card image cap">
                             <div class="card-header bg-primary text-white">125 Park Avenue 77, Alabama <strong class="float-right h6">$2,50,000</strong></div>
@@ -181,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4_25 all bathroom">
+                    <div class="col-md-4 mb-4_25 card-wrap bedroom mix" data-order="5">
                         <div class="card-item">
                             <img class="w-100" src="images/image.png" alt="Card image cap">
                             <div class="card-header bg-primary text-white">125 Park Avenue 77, Alabama <strong class="float-right h6">$2,50,000</strong></div>
@@ -198,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4_25 all bedroom">
+                    <div class="col-md-4 mb-4_25 card-wrap kitchen mix" data-order="6">
                         <div class="card-item">
                             <img class="w-100" src="images/image.png" alt="Card image cap">
                             <div class="card-header bg-primary text-white">125 Park Avenue 77, Alabama <strong class="float-right h6">$2,50,000</strong></div>
@@ -215,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4_25 all kitchen">
+                    <div class="col-md-4 mb-4_25 card-wrap kitchen mix" data-order="7">
                         <div class="card-item">
                             <img class="w-100" src="images/image.png" alt="Card image cap">
                             <div class="card-header bg-primary text-white">125 Park Avenue 77, Alabama <strong class="float-right h6">$2,50,000</strong></div>
@@ -232,24 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4_25 all kitchen">
-                        <div class="card-item">
-                            <img class="w-100" src="images/image.png" alt="Card image cap">
-                            <div class="card-header bg-primary text-white">125 Park Avenue 77, Alabama <strong class="float-right h6">$2,50,000</strong></div>
-                            <div class="card-block">
-                                <h2 class="h6 card-title text-uppercase font-weight-bold">Card title</h2>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer text-white">
-                                <div class="row small">
-                                    <div class="col-4"><i class="fa fa-object-group mr-1 text-primary"></i>800 sq ft</div>
-                                    <div class="col-4"><i class="fa fa-bed mr-1 text-primary"></i>2 Badrooms</div>
-                                    <div class="col-4"><i class="fa fa-tint mr-1 text-primary"></i>2 Baths</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4_25 all kitchen">
+                    <div class="col-md-4 mb-4_25 card-wrap kitchen mix" data-order="8">
                         <div class="card-item">
                             <img class="w-100" src="images/image.png" alt="Card image cap">
                             <div class="card-header bg-primary text-white">125 Park Avenue 77, Alabama <strong class="float-right h6">$2,50,000</strong></div>
@@ -274,7 +273,7 @@
 
 
 
-<footer class="footer">
+<footer class="footer" data-aos="fade-up">
     <div class="footer-overlay py-5">
         <div class="container">
             <div class="row">

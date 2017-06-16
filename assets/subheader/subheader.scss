@@ -1,5 +1,6 @@
 .subheader {
-  background: url('../../images/footer.jpg') no-repeat 100%;
+  background: url('../../images/footer.jpg');
+  background-position: 100%;
   .subheader-overlay {
     background: rgba($black, 0.3);
   }
