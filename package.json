@@ -36,6 +36,7 @@
     "resolve-url-loader": "^2.0.2",
     "sass-loader": "^6.0.5",
     "sass-resources-loader": "^1.2.1",
+    "slick-carousel": "^1.6.0",
     "style-loader": "^0.18.1",
     "url-loader": "^0.5.8",
     "webpack": "^2.6.1",

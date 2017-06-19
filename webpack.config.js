@@ -35,16 +35,16 @@ module.exports = {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
                 loader: "url-loader?limit=10000&mimetype=image/svg+xml"
             },
-            {
-                test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['env']
-                    }
-                }
-            },
+            //{
+            //    test: /\.js$/,
+            //    exclude: /(node_modules|bower_components)/,
+            //    use: {
+            //        loader: 'babel-loader',
+            //        options: {
+            //            presets: ['env']
+            //        }
+            //    }
+            //},
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract([

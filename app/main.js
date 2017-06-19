@@ -10,6 +10,7 @@ var global = [
     'assets/theme/sections'
 ];
 var homePage = [
+    'node_modules/slick-carousel/slick/slick',
     'assets/carousel/carousel',
     'assets/carousel-modal/carousel-modal',
     'assets/collection-set/collection-set',
@@ -17,9 +18,11 @@ var homePage = [
 ];
 var galleryPage = [
     'assets/subheader/subheader',
+    'node_modules/slick-carousel/slick/slick',
     'assets/breadcrumbs/breadcrumbs',
     'assets/gallery/gallery',
-    'node_modules/mixitup/dist/mixitup'
+    'node_modules/mixitup/dist/mixitup',
+    'assets/testimonials/testimonials',
 ];
 module.exports = {
     'vendor' : vendor,

@@ -1,5 +1,5 @@
 {% macro carouselSlide(slide, index) %}
-    <div class="carousel-item {% if index === 0 %} active {% endif %}">
+    <div class="slick-carousel-item">
         <img class="d-block img-fluid" src="{{ slide.image.url }}" alt="{{ image.alt }}">
         <div class="carousel-caption p-0">
             <div class="container">
@@ -28,20 +28,20 @@
     </div>
 {% endmacro %}
 <div class="container-fluid px-0">
-    <div id="carouselControls" class="carousel slide hero-carousel" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
+    <div class="hero-carousel" data-ride="carousel">
+        <div class="carousel-container" role="listbox">
             {% asyncEach slide in heroCarousel.slides %}
                 {{ carouselSlide(slide, loop.index0) }}
             {% endeach %}
         </div>
-        <a class="carousel-control-prev carousel-control" href="#carouselControls" role="button" data-slide="prev">
-            <i class="fa fa-angle-left carousel-control-prev-icon"></i>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next carousel-control" href="#carouselControls" role="button" data-slide="next">
-            <i class="fa fa-angle-right carousel-control-next-icon"></i>
-            <span class="sr-only">Next</span>
-        </a>
+        <!--<a class="carousel-control-prev carousel-control slick-prev slick-arrow" role="button">-->
+            <!--<i class="fa fa-angle-left carousel-control-prev-icon"></i>-->
+            <!--<span class="sr-only">Previous</span>-->
+        <!--</a>-->
+        <!--<a class="carousel-control-next carousel-control" role="button">-->
+            <!--<i class="fa fa-angle-right carousel-control-next-icon"></i>-->
+            <!--<span class="sr-only">Next</span>-->
+        <!--</a>-->
     </div>
 </div>
 {% import "components/details-modal.html" as modal %}

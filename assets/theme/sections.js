@@ -1,2 +1,2 @@
-var AOS = require('AOS');
+var AOS = require('aos');
 AOS.init();
