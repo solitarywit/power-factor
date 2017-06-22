@@ -1,6 +1,7 @@
 {% extends 'application/layouts.html' %}
+{% import "components/subheader.html" as subheader %}
 {% block pageStyle %}<link rel="stylesheet" href="assets/gallery-page.bundle.css">{% endblock %}
 {% block pageScript %}<script src="assets/gallery-page.bundle.js"></script>{% endblock %}
-{% block subheader %}{% include "components/subheader.html" %}{% endblock %}
+{% block subheader %} {{subheader.createSubheader({title:'Gallery'})}}{% endblock %}
 {% block gallery %}{% include "components/gallery.html" %}{% endblock %}
 {% block testimonials %}{% include "components/testimonials.html" %}{% endblock %}

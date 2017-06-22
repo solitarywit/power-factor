@@ -15,6 +15,8 @@ var homePage = [
     'assets/carousel-modal/carousel-modal',
     'assets/collection-set/collection-set',
     'assets/nearby/nearby',
+    'node_modules/google-maps/lib/Google.js',
+    'assets/google-map/google-map'
 ];
 var galleryPage = [
     'assets/subheader/subheader',
@@ -24,9 +26,17 @@ var galleryPage = [
     'node_modules/mixitup/dist/mixitup',
     'assets/testimonials/testimonials',
 ];
+var contactUs = [
+    'assets/subheader/subheader',
+    'assets/breadcrumbs/breadcrumbs',
+    'assets/contact-details/contact-details',
+    'node_modules/google-maps/lib/Google.js',
+    'assets/google-map/google-map'
+];
 module.exports = {
     'vendor' : vendor,
     'global' : global,
     'home-page': homePage,
     'gallery-page': galleryPage,
+    'contact-us': contactUs,
 };

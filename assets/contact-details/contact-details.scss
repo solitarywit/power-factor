@@ -1,0 +1,17 @@
+.contact-details {
+  .contact-box {
+    border: 1px solid #464646;
+    &:hover {
+      .ico {
+        background: $brand-primary;
+      }
+    }
+    .ico {
+      background: #1b1b1b;
+      transition: background .5s ease;
+      &:hover {
+        background: $brand-primary;
+      }
+    }
+  }
+}
