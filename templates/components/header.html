@@ -7,21 +7,21 @@
             <div class="col-lg-3 col-md-4 col-12 header-call d-flex justify-content-center justify-content-md-start justify-content-lg-center align-items-center mb-2 mb-md-0">
                 <i class="fa fa-phone rounded-circle p-2 text-primary"></i>
                 <div class="ml-3">
-                    <strong>123-456-7890</strong>
-                    <div>info@example.com</div>
+                    <strong><a class="text-white" href="tel:{{header.phone}}">{{header.phone}}</a></strong>
+                    <div><a class="text-white" href="mailto:{{header.email}}">{{header.email}}</a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-12 header-place d-flex justify-content-center justify-content-md-start justify-content-lg-center align-items-center mb-2 mb-md-0">
                 <i class="fa fa-home rounded-circle p-2 text-primary"></i>
                 <div class="ml-3">
-                    <strong>777 Seventh Avenue</strong>
-                    <div>Downtown NY 01234</div>
+                    <strong>{{header.street}}</strong>
+                    <div>{{header.city}}</div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-12 d-flex header-langs text-right justify-content-center justify-content-lg-end align-items-center">
-                <a class="text-uppercase" href="#">rus</a>
+                <a class="text-uppercase" href="/ru">{{header.ru}}</a>
                 <i class="mx-2">&#124;</i>
-                <a class="text-uppercase" href="#">eng</a>
+                <a class="text-uppercase" href="/">{{header.en}}</a>
             </div>
         </div>
     </div>

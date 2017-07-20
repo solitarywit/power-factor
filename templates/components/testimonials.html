@@ -1,83 +1,27 @@
-<div class="container-fluid" data-aos="fade-up">
-    <div class="row justify-content-center"><h3 class="display-4 text-center text-uppercase section-heading pb-4_75 mb-3_25"><span class="font-weight-bold">TESTI</span><span class="text-primary">MONIALS</span></h3></div>
-    <div class="row pb-5 testimonials-container">
-        <div class="col-md-4 mx-3 testimonial-item p-0">
-            <div class="testimonial-comment p-5">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                <p>It is a long established fact that a reader will be dis-tracted by the readable content of a page when looking at its layout. The poing of using lorem ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content, making it look like readable English.</p>
-            </div>
-            <div class="testimonial-author d-flex align-items-center mt-4_5 ml-4_25">
-                <img src="images/testimonial-author.jpg" alt="" class="rounded-circle">
-                <div class="ml-3_5">
-                    <div class="tauthor-name">Ben Kingsly</div>
-                    <div class="tauthor-role">CEO - Royals Group</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mx-3 testimonial-item p-0">
-            <div class="testimonial-comment p-5">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                <p>It is a long established fact that a reader will be dis-tracted by the readable content of a page when looking at its layout. The poing of using lorem ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content, making it look like readable English.</p>
-            </div>
-            <div class="testimonial-author d-flex align-items-center mt-4_5 ml-4_25">
-                <img src="images/testimonial-author.jpg" alt="" class="rounded-circle">
-                <div class="ml-3_5">
-                    <div class="tauthor-name">Ben Kingsly</div>
-                    <div class="tauthor-role">CEO - Royals Group</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mx-3 testimonial-item p-0">
-            <div class="testimonial-comment p-5">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                <p>It is a long established fact that a reader will be dis-tracted by the readable content of a page when looking at its layout. The poing of using lorem ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content, making it look like readable English.</p>
-            </div>
-            <div class="testimonial-author d-flex align-items-center mt-4_5 ml-4_25">
-                <img src="images/testimonial-author.jpg" alt="" class="rounded-circle">
-                <div class="ml-3_5">
-                    <div class="tauthor-name">Ben Kingsly</div>
-                    <div class="tauthor-role">CEO - Royals Group</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mx-3 testimonial-item p-0">
-            <div class="testimonial-comment p-5">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                <p>It is a long established fact that a reader will be dis-tracted by the readable content of a page when looking at its layout. The poing of using lorem ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content, making it look like readable English.</p>
-            </div>
-            <div class="testimonial-author d-flex align-items-center mt-4_5 ml-4_25">
-                <img src="images/testimonial-author.jpg" alt="" class="rounded-circle">
-                <div class="ml-3_5">
-                    <div class="tauthor-name">Ben Kingsly</div>
-                    <div class="tauthor-role">CEO - Royals Group</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mx-3 testimonial-item p-0">
-            <div class="testimonial-comment p-5">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                <p>It is a long established fact that a reader will be dis-tracted by the readable content of a page when looking at its layout. The poing of using lorem ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content, making it look like readable English.</p>
-            </div>
-            <div class="testimonial-author d-flex align-items-center mt-4_5 ml-4_25">
-                <img src="images/testimonial-author.jpg" alt="" class="rounded-circle">
-                <div class="ml-3_5">
-                    <div class="tauthor-name">Ben Kingsly</div>
-                    <div class="tauthor-role">CEO - Royals Group</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mx-3 testimonial-item p-0">
-            <div class="testimonial-comment p-5">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                <p>It is a long established fact that a reader will be dis-tracted by the readable content of a page when looking at its layout. The poing of using lorem ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content, making it look like readable English.</p>
-            </div>
-            <div class="testimonial-author d-flex align-items-center mt-4_5 ml-4_25">
-                <img src="images/testimonial-author.jpg" alt="" class="rounded-circle">
-                <div class="ml-3_5">
-                    <div class="tauthor-name">Ben Kingsly</div>
-                    <div class="tauthor-role">CEO - Royals Group</div>
-                </div>
-            </div>
+{% macro testiItem(data) %}
+<div class="col-md-4 mx-3 testimonial-item p-0">
+    <div class="testimonial-comment p-5">
+        <i class="fa fa-quote-left" aria-hidden="true"></i>
+        <p>{{ data.description }}</p>
+    </div>
+    <div class="testimonial-author d-flex align-items-center mt-4_5 ml-4_25">
+        <img src="{{ data.image }}" alt="" class="rounded-circle">
+        <div class="ml-3_5">
+            <div class="tauthor-name">{{ data.author }}</div>
+            <div class="tauthor-role">{{ data.role }}</div>
         </div>
     </div>
 </div>
+{% endmacro %}
+
+<div class="container-fluid" data-aos="fade-up">
+    <div class="row justify-content-center">
+        <h3 class="display-4 text-center text-uppercase section-heading pb-4_75 mb-3_25">{{ testimonials.title }}</h3>
+    </div>
+    <div class="row pb-5 testimonials-container">
+        {% asyncEach item in testimonials.items %}
+            {{ testiItem(item) }}
+        {% endeach %}
+    </div>
+</div>
+

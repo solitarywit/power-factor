@@ -1,7 +1,7 @@
 {% extends 'application/layouts.html' %}
 {% import "components/subheader.html" as subheader %}
-{% block pageStyle %}<link rel="stylesheet" href="assets/contact-us.bundle.css">{% endblock %}
-{% block pageScript %}<script src="assets/contact-us.bundle.js"></script>{% endblock %}
-{% block subheader %} {{subheader.createSubheader({title:'Contact Us'})}}{% endblock %}
+{% block pageStyle %}<link rel="stylesheet" href="/assets/contact-us.bundle.css">{% endblock %}
+{% block pageScript %}<script src="/assets/contact-us.bundle.js"></script>{% endblock %}
+{% block subheader %} {{subheader.createSubheader({title:contact.mainTitle}, menu)}}{% endblock %}
 {% block contactDetails %}{% include "components/contact-details.html" %}{% endblock %}
 {% block googleMap %}{% include "components/google-map.html" %}{% endblock %}

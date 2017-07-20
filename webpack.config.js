@@ -21,30 +21,20 @@ module.exports = {
                 loader: 'expose-loader?$!expose-loader?jQuery'
             }, {
                 test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "url-loader?limit=10000&mimetype=application/font-woff"
+                loader: "url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]"
             }, {
                 test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "url-loader?limit=10000&mimetype=application/font-woff"
+                loader: "url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]"
             }, {
                 test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "url-loader?limit=10000&mimetype=application/octet-stream"
+                loader: "url-loader?limit=10000&mimetype=application/octet-stream&name=fonts/[name].[ext]"
             }, {
                 test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "url-loader?limit=10000&mimetype=application/vnd.ms-fontobject"
+                loader: "url-loader?limit=10000&mimetype=application/vnd.ms-fontobject&name=fonts/[name].[ext]"
             }, {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "url-loader?limit=10000&mimetype=image/svg+xml"
+                loader: "url-loader?limit=10000&mimetype=image/svg&name=fonts/[name].[ext]"
             },
-            //{
-            //    test: /\.js$/,
-            //    exclude: /(node_modules|bower_components)/,
-            //    use: {
-            //        loader: 'babel-loader',
-            //        options: {
-            //            presets: ['env']
-            //        }
-            //    }
-            //},
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract([

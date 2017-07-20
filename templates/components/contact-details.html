@@ -5,9 +5,9 @@
                 <div class="contact-box row align-self-stretch mx-0 mx-md-1">
                     <div class="col-3 text-center ico d-flex align-items-center justify-content-center"><i class="fa fa-map-marker fa-2x"></i></div>
                     <div class="col-9 pb-3">
-                        <strong class="contact-box-heading d-block py-3">Office Address</strong>
-                        <div>Hoffman Parkway, P.O Box 353</div>
-                        <div>Mountain Veiw, USA</div>
+                        <strong class="contact-box-heading d-block py-3">{{contact.officeTitle}}</strong>
+                        <div>{{contact.street}}</div>
+                        <div>{{contact.city}}</div>
                     </div>
                 </div>
             </div>
@@ -15,9 +15,9 @@
                 <div class="contact-box row align-self-stretch mx-0 mx-md-1">
                     <div class="col-3 text-center ico d-flex align-items-center justify-content-center"><i class="fa fa-phone fa-2x"></i></div>
                     <div class="col-9 pb-3">
-                        <strong class="contact-box-heading d-block py-3">Phone Number</strong>
-                        <div>Local: <a class="text-white" href="tel:180011111">1-800-11111</a></div>
-                        <div>Mobile: <a class="text-white" href="tel:180011111">1-800-11111</a></div>
+                        <strong class="contact-box-heading d-block py-3">{{contact.phoneTitle}}</strong>
+                        <div>{{contact.local}}: <a class="text-white" href="tel:{{contact.phone1}}">{{contact.phone1}}</a></div>
+                        <div>{{contact.mobile}}: <a class="text-white" href="tel:{{contact.phone2}}">{{contact.phone2}}</a></div>
                     </div>
                 </div>
             </div>
@@ -25,9 +25,9 @@
                 <div class="contact-box row align-self-stretch mx-0 mx-md-1">
                     <div class="col-3 text-center ico d-flex align-items-center justify-content-center"><i class="fa fa-envelope fa-2x"></i></div>
                     <div class="col-9 pb-3">
-                        <strong class="contact-box-heading d-block py-3">Email Address</strong>
-                        <div><a class="text-white" href="mailto:youremail@mail.com">youremail@mail.com</a></div>
-                        <div>www.yourwebsite.com</div>
+                        <strong class="contact-box-heading d-block py-3">{{contact.emailTitle}}</strong>
+                        <div><a class="text-white" href="mailto:{{contact.email}}">{{contact.email}}</a></div>
+                        <div><a class="text-white" href="{{contact.website}}">{{contact.website}}</a></div>
                     </div>
                 </div>
             </div>

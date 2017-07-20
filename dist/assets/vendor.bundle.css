@@ -91,7 +91,8 @@ a:hover {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 b,
@@ -952,11 +953,6 @@ pre code {
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #F9F9F9;
-  opacity: 1;
-}
-
-.form-control::-moz-placeholder {
   color: #F9F9F9;
   opacity: 1;
 }
@@ -4365,10 +4361,8 @@ a.badge:hover {
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
-       -moz-column-count: 3;
             column-count: 3;
     -webkit-column-gap: 1.25rem;
-       -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
   }
 

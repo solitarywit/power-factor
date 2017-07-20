@@ -1,4 +1,4 @@
-{% macro carouselSlide(slide, index) %}
+{% macro carouselSlide(slide, index, heroCarousel) %}
     <div class="slick-carousel-item">
         <img class="d-block img-fluid" src="{{ slide.image.url }}" alt="{{ image.alt }}">
         <div class="carousel-caption p-0">
@@ -20,7 +20,7 @@
                     <div class="col-3 py-4_5 pl-4_5 pr-2 hidden-md-down"><span class="h3">{{ slide.category.cost }}</span></div>
                     <div data-toggle="modal" data-target="#openDetails{{index}}"
                          class="open-details offset-3 offset-md-0 col-6 col-md-3 col-lg-2 py-2 bg-primary text-white align-self-stretch d-flex align-items-center justify-content-center">
-                        <span class="text-uppercase h5 font-weight-normal">View Details</span>
+                        <span class="text-uppercase h5 font-weight-normal">{{heroCarousel.viewDetails}}</span>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
     <div class="hero-carousel" data-ride="carousel">
         <div class="carousel-container" role="listbox">
             {% asyncEach slide in heroCarousel.slides %}
-                {{ carouselSlide(slide, loop.index0) }}
+                {{ carouselSlide(slide, loop.index0, heroCarousel) }}
             {% endeach %}
         </div>
         <!--<a class="carousel-control-prev carousel-control slick-prev slick-arrow" role="button">-->

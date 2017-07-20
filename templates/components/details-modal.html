@@ -6,8 +6,8 @@
                     <h3 class="modal-title text-uppercase font-weight-bold" id="productLabel{{ index }}">{{product.name}}</h3>
                 </div>
                 <div class="mb-3">
-                    <a href="{{product.docs.msds}}" class="btn btn-primary text-uppercase" download>Save MSDS</a>
-                    <a href="{{product.docs.pdf}}" class="btn btn-primary text-uppercase" download>Save PDF</a>
+                    <a href="{{product.docs.msds}}" class="btn btn-primary text-uppercase" download>{{product.docs.titleMSDS}}</a>
+                    <a href="{{product.docs.pdf}}" class="btn btn-primary text-uppercase" download>{{product.docs.titlePDF}}</a>
                 </div>
 
                 <p>{{product.description}}</p>

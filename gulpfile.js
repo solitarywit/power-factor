@@ -5,27 +5,29 @@ var nunjucks = require('gulp-nunjucks-html');
 var webpack = require('webpack');
 var webpackConfig = require('./webpack.config.js');
 var WebpackDevServer = require("webpack-dev-server");
-var wds = null;
 var DATA = require('./data/global');
+var config = require('./webpack.config');
 
-gulp.task('html', function() {
+gulp.task('html:en', function() {
     gulp.src(['templates/**/*.html'])
         .pipe(nunjucks({
             searchPaths: ['templates'],
-            locals: DATA
+            locals: DATA.en
         }))
         .pipe(gulp.dest('dist/'))
 });
 
-// gulp.task('live-reload-webpack', function () {
-//     if (!wds){
-//         return false;
-//     }
-//     console.log('!!!!!!!', wds);
-// });
+gulp.task('html:ru', function() {
+    gulp.src(['templates/**/*.html'])
+        .pipe(nunjucks({
+            searchPaths: ['templates'],
+            locals: DATA.ru
+        }))
+        .pipe(gulp.dest('dist/ru'))
+});
 
-gulp.task('build',['html', 'webpack:build-dev'], function() {
-    gulp.watch(['assets/**/*', 'templates/**/*', 'images/**/*'], ['html', "webpack:build-dev"/*, "live-reload-webpack"*/]);
+gulp.task('build',['html:en','html:ru', 'webpack:build-dev'], function() {
+    gulp.watch(['assets/**/*', 'data/*', 'templates/**/*', 'images/**/*'], ['html:en', 'html:ru', "webpack:build-dev"]);
 });
 
 gulp.task("webpack:build-dev", function(callback) {
@@ -40,26 +42,21 @@ gulp.task("webpack:build-dev", function(callback) {
 });
 
 gulp.task('webpack-dev-server', function(callback) {
-    // Start a webpack-dev-server
-    var compiler = webpack(webpackConfig);
-
-    wds = new WebpackDevServer(compiler, {
-        publicPath: path.join(__dirname, "dist"),
+//# -----your-webpack-dev-server------------------
+    var server = new WebpackDevServer(webpack(config), {
+        publicPath:  path.join(__dirname, "dist"),
         contentBase: path.join(__dirname, "dist"),
-        open: true,
-        inline: true,
-        hot: true,
         watchContentBase: true,
-        stats: "errors-only",
+        hot: true,
+        quiet: false,
+        noInfo: false,
+        inline: true,
         port: 8080,
-        host: 'localhost'
-    }).listen(8080, 'localhost', function (err) {
-        if (err) throw new gutil.PluginError('webpack-dev-server', err);
-        // Server listening
-        gutil.log('[webpack-dev-server]', 'http://localhost:8080/index.html');
+        stats: { colors: true }
+    });
 
-        // keep the server alive or continue?
-        callback();
+    server.listen(8080, "localhost", function() {
+        gutil.log('[webpack-dev-server]', 'http://localhost:8080/index.html');
     });
 });
 

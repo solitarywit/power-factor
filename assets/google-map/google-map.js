@@ -187,7 +187,7 @@ GoogleMapsLoader.load(function(google) {
             mapTypeId: 'roadmap'
         };
         var map = new google.maps.Map(el, options);
-        var markerImage = 'images/map-marker.png';
+        var markerImage = '/images/map-marker.png';
 
         var marker = new google.maps.Marker({
             position: location,
